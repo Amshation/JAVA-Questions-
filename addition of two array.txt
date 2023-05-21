@@ -1,0 +1,64 @@
+package array;
+import java.util.Scanner;
+
+public class additionoftwodarray {
+public static void main(String []arg) {
+	
+	Scanner sc= new Scanner(System.in);
+	System.out.println("Enter rows ");
+	int rows = sc.nextInt();
+	System.out.println("Enter cloumns");
+	int col=sc.nextInt();
+	//int num=0;
+	
+	int a[] [] = new int [rows][col];
+	int b[] [] =new int [rows][col];
+	
+	
+	System.out.println("enter array A");	
+	for(int i=0; i<rows;i++) {
+		for(int j=0; j<col;j++) {
+			
+			a[i][j]=sc.nextInt();
+			
+			
+		}
+	}
+	
+	System.out.println("enter array B");
+	for(int i=0; i<rows;i++) {
+		for(int j=0; j<col;j++) {
+			
+			b[i][j]=sc.nextInt();
+	
+}
+	}
+	
+int c[][]=new int [rows][col];
+	for(int i=0; i<rows;i++) {
+		for(int j=0; j<col;j++) {
+		c[i][j]= a[i][j]+b[i][j];
+			
+		{
+			
+}
+		}
+	}
+	System.out.println("addition of a+b"+"")	;
+
+	for(int i=0; i<rows;i++) {
+		for(int j=0; j<col;j++) {
+			System.out.print( c[i][j]);
+			System.out.println();
+		
+}
+		
+			}
+	
+	
+
+	
+		
+}
+}
+
